@@ -1,0 +1,14 @@
+{
+    "user": {
+        "name": "",
+        "password": ""
+    },
+    "proxy": {
+        "enable": true
+    },
+    "server": {
+        "host": "localhost",
+        "port": 6868,
+        "hot": true
+    }
+}
