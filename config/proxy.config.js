@@ -1,7 +1,9 @@
+var path = require('path');
+
 module.exports = {
     // webpack-dev-server options
 
-    //contentBase: path.join(__dirname, '..', 'src'),
+    //contentBase: path.join(__dirname, 'src'),
     // or: contentBase: "http://localhost/",
 
     hot: true,
@@ -12,10 +14,10 @@ module.exports = {
 
     // Set this as true if you want to access dev server from arbitrary url.
     // This is handy if you are using a html5 router.
-    //historyApiFallback: true,
+    historyApiFallback: true,
 
     // Set this if you want to enable gzip compression for assets
-    compress: true,
+    //compress: true,
 
     // Set this if you want webpack-dev-server to delegate a single path to an arbitrary server.
     // Use "*" to proxy all paths to the specified server.
@@ -45,7 +47,7 @@ module.exports = {
         aggregateTimeout: 300,
         poll: 1000
     },
-    publicPath: "",
+    //publicPath: "",
     headers: { "X-Custom-Header": "yes" },
-    stats: { colors: true }
+    stats: { colors: true, chunks: false }
 };
